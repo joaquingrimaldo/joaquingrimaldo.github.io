@@ -3,30 +3,118 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Hello World</title>
-		<!--<link rel="stylesheet" type="text/css" href="main.css">-->
+		<style type="text/css">
+
+			body {
+				margin: 0;
+			}
+
+			h1 {
+				color: #1AD6FD;
+				margin: 40px 20px 0 20px;
+				height: 100px;
+				font-size: 40px;
+				text-align: center;
+			}
+
+			h2 {
+				color: #1AD6FD;
+				text-align: center;
+			}
+
+			p {
+				color: #000000;
+				font-size: 14px;
+				line-height: 24px;
+				font-family: sans-serif;
+				font-weight: 100px
+
+			}
+
+			hr {
+				width: 960px;
+				margin-bottom: 50px;
+				border: 1px solid #DBDDDE;
+			}
+
+			a {
+				text-decoration: none;
+				color: #ffffff;
+			}
+
+			.bio {
+				width: 640px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 50px;
+
+			}
+
+			.footer {
+				color: #FFFFFF;
+			}
+
+			.subheading{
+				color: #4A4A4A;
+				text-align: center;
+				font-size: 20px;
+				margin: 0 0 60px 0;
+			}
+
+			.image-container {
+				display: inline-block;
+				width: 300px;
+				padding: 0 20px 20px 20px;
+			}
+
+			img {
+				width: 100%;
+			}
+
+			.favorites {
+				text-align: center;
+			}
+
+			footer {
+				height: 300px;
+				padding: 40px;
+				margin: 50px 0 0 0;
+				color: #000000;
+				background-color: #4A4A4A;
+				text-align: center;
+			}
+
+		</style>
+		<!--<link rel="stylesheet" type="text/css" href="main.css"-->
 	</head>
 	<body>
 		<h1>Joaquin Grimaldo</h1>
-		<p>Visual Designer. Computer Nerd. Guitar Player.</p>
-		<p>I live in Glen Ellyn. I work in Chicago. I was born in Chicago. And I am now taking a class at the Starter League. Read on for more...</p>
+		<p class="subheading">Visual Designer. Computer Nerd. Guitar Player.</p> <hr>
+		<p class="bio">I live in Glen Ellyn. I work in Chicago. I was born in Chicago. And I am now taking a class at the Starter League. Read on for more...</p>
 		<h2>Some of my favorite things</h2>
-		<div>
-			<a href="http://www.awwwards.com">
-				<img width="200px" src="http://a1.dspnimg.com/data/l/394190232812_pXNDrI2j_l.jpg">
-			</a>
-			<p>Web Design</p>
+		<div class="favorites">
+			<div class="image-container">
+				<a href="http://www.awwwards.com">
+					<img width="200px" src="http://a1.dspnimg.com/data/l/394190232812_pXNDrI2j_l.jpg">
+				</a>
+				<p>Web Design</p>
+			</div>
+			<div class="image-container">
+				<a href="http://www.apple.com"/>	
+					<img width="200px" src="http://upload.wikimedia.org/wikipedia/commons/5/56/MacBook_Pro_Retina.png" alt="Macbook">
+				</a>
+				<p>Apple</p>
+			</div>
+			<div class="image-container">
+				<a href ="http://www.gretschguitars.com">
+					<img width="200px" src="http://media.musicstorelive.com/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/1/9/1996_gretsch_g6129-1957_sparkle_jet-silver_jet_silver_sparkle_electric_guitar_11469-8.jpg" alt="Gretsch Sparkle Jet">
+				</a>
+				<p>Gretsch Guitars</p>
+			</div>
 		</div>
-		<div>
-			<a href="http://www.apple.com"/>	
-				<img width="200px" src="http://upload.wikimedia.org/wikipedia/commons/5/56/MacBook_Pro_Retina.png" alt="Macbook">
-			</a>
-			<p>Apple</p>
-		</div>
-		<div>
-			<a href ="http://www.gretschguitars.com">
-				<img width="200px" src="http://media.musicstorelive.com/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/1/9/1996_gretsch_g6129-1957_sparkle_jet-silver_jet_silver_sparkle_electric_guitar_11469-8.jpg" alt="Gretsch Sparkle Jet">
-			</a>
-			<p>Gretsch Guitars</p>
-		</div>
+		<footer>
+			<h2>Wanna be friends?</h2>
+			<p class="footer">Email me at <a href="mailto:j.grimaldo@me.com">j.grimaldo@me.com</a></p>
+		</footer>
 	</body>
 </html>
